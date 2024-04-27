@@ -1,0 +1,99 @@
+
+.header ul li {
+  float: inline-start;
+  width: 375px;
+  height: 48px;
+  color: blueviolet;
+}
+
+.header ul svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px;
+  text-decoration: none;
+  list-style-type: none;
+  float: inline-end;
+}
+
+#myl-logo {
+  padding: 10px 12px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  float: inline-start;
+}
+
+.header ul li span {
+  border-radius: 8px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  float: right;
+
+  /* background-color: #344563; */
+}
+
+.main div h1 {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: #172b4d;
+  padding-right: 0;
+}
+
+.main div h1 svg {
+  float: inline-end;
+}
+
+.main p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #344563;
+  text-align: left;
+  padding: 15px;
+}
+
+.let {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7f8cff;
+}
+
+.social-medias ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  float: left;
+}
+
+.social-medias ul :hover {
+  background-color: #c1cce1;
+  border-radius: 35%;
+}
+
+.social-medias ul li {
+  float: left;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar ul li a {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar ul li a {
+    width: auto;
+
+    /* display: flex; */
+    float: left;
+  }
+}
