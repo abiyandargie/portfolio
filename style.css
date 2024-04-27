@@ -1,3 +1,12 @@
+.background-image-container {
+  .background-image-container {
+    background-image: url("image.jpg");
+    background-size: cover;    /* Adjust to your needs */
+    background-position: center;   /* Adjust to your needs */
+    background-repeat: no-repeat;   /* Adjust to your needs */
+  }
+}
+ 
 
 .header ul li {
   float: inline-start;
@@ -55,7 +64,9 @@
   line-height: 150%;
   color: #344563;
   text-align: left;
-  padding: 15px;
+  padding-left: 15%;
+  padding-right: 15%;
+
 }
 
 .let {
@@ -64,13 +75,17 @@
   font-size: 16px;
   line-height: 150%;
   color: #7f8cff;
+  margin-left: 15%;
 }
 
 .social-medias ul {
   text-decoration: none;
   list-style-type: none;
-  margin: 0;
+  margin-left: 15%;
+  margin-right: 15%;
   float: left;
+  line-break: normal;
+
 }
 
 .social-medias ul :hover {
@@ -80,7 +95,11 @@
 
 .social-medias ul li {
   float: left;
-  padding: 20px;
+  display: flex;
+   padding-right: 10px;
+  /* margin-left: 15%;
+  margin-right: 15%;  */
+
 }
 
 @media only screen and (max-width: 768px) {
