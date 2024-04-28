@@ -1,5 +1,5 @@
 /* Common styles for all screen sizes */
-
+ 
 .head1 #images img {
   width: 50px;
   height: 20px;
@@ -16,7 +16,13 @@
 .background-image-container {
   background-image: url("image.jpg");
   background-size: cover;
+  height: 160vh; 
+   align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
+  background-size: 95% 100%;
+    
+    
 }
 
 #images {
@@ -38,9 +44,9 @@
 }
 
 .main div h1 {
-  background-image: url("images/elipse3.png"), url("images/elipse14.png");
+  /* background-image: url("images/elipse3.png"), url("images/elipse14.png");
   background-position: right top, calc(50% + 100px) bottom;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   text-align: center;
   font-family: var(--font-family);
   font-weight: 700;
@@ -73,15 +79,15 @@
   line-height: 150%;
   color: #7f8cff;
   margin-left: 15%;
-  background-image:
+  /* background-image:
     url("images/elipse12.png"),
     url("images/elipse13.png");
   background-position: right bottom, right bottom;
   background-size: 24.14px 12.07px, 30.1px 30.1px;
-  background-position-x: 332.18px;
+  background-position-x: 332.18px; */
 
   /* transform: rotate(176.08deg,-69deg); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .social-medias ul {
@@ -92,7 +98,7 @@
 }
 
 .social-medias ul :hover {
-  background-color: #87a6de;
+  background-color: #edf0f4;
   border-radius: 35%;
 }
 
@@ -101,13 +107,13 @@
   display: flex;
   padding-right: 25px;
   padding-left: 6px;
-  background-color: #a4d7b1;
+  background-color: #f2f7f3;
   color: aliceblue;
   border-radius: 10px;
 }
 
 .main {
-  background-image:
+  /* background-image:
     url("images/image1.png"),
     url("images/elipse4.png"),
     url("images/rectangle5.png"),
@@ -125,7 +131,7 @@
     bottom left,
     top right,
     calc(50% + 140px) top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   padding: 10% 10%;
   width: 80%;
   height: auto;
