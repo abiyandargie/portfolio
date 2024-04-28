@@ -6,7 +6,6 @@
 }
 
 .head1 #time h4 {
-  margin-left: 20px;
   float: left;
   margin-left: 10%;
   height: 40px;
@@ -95,22 +94,24 @@
 }
 
 .main {
-  background-image: url("images/image1.png"),
-                     url("images/elipse4.png"),
-                     url("images/rectangle5.png"),
-                     url("images/elipse5.png"),
-                     url("images/rectangle7.png"),
-                     url("images/elipse15.png"),
-                     url("images/rectangle4.png"),
-                     url("images/elipse8.png");
-  background-position: left top,
-                       bottom center,
-                       bottom center, /* Adjust the percentage value as needed */
+  background-image:
+    url("images/image1.png"),
+    url("images/elipse4.png"),
+    url("images/rectangle5.png"),
+    url("images/elipse5.png"),
+    url("images/rectangle7.png"),
+    url("images/elipse15.png"),
+    url("images/rectangle4.png"),
+    url("images/elipse8.png");
+  background-position:
+    left top,
+    bottom center,
+    bottom center, 
                        top center,
-                       top center,
-                       left bottom,
-                       top right,
-                       calc(50% + 140px) top;
+           ter,
+           ttom,
+          ght,
+             + 140px) to    ;
   background-repeat: no-repeat;
   padding: 10% 10%;
   width: 80%;
@@ -120,7 +121,6 @@
 /* Styles for mobile screens (375px and above) */
 
 @media screen and (min-width: 375px) {
-
   .header ul #dropdown {
     border-radius: 8px;
     padding: 8px;
@@ -128,7 +128,8 @@
     height: 34px;
     float: right;
     margin-top: -45px;
-    /*we will adjust based on the next(project 2,3,4... versions*/
+
+    /* we will adjust based on the next(project 2,3,4... versions */
   }
 
   .navbar ul li a {
@@ -139,7 +140,6 @@
 /* Styles for desktop screens(for arge screens) i.e (768px and above) */
 
 @media screen and (min-width: 768px) {
-
   .navbar ul li a {
     width: auto;
     float: left;
