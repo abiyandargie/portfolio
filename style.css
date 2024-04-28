@@ -1,48 +1,45 @@
-.background-image-container {
-  .background-image-container {
-    background-image: url("image.jpg");
-    background-size: cover;    /* Adjust to your needs */
-    background-position: center;   /* Adjust to your needs */
-    background-repeat: no-repeat;   /* Adjust to your needs */
-  }
+/* Common styles for all screen sizes */
+
+.head1 #images img {
+  width: 50px;
+  height: 20px;
 }
 
-.header ul li {
-  float: inline-start;
-  width: 375px;
-  height: 48px;
-  color: blueviolet;
-}
-
-.header ul svg {
-  width: 40px;
+.head1 #time h4 {
+  margin-left: 20px;
+  float: left;
+  margin-left: 10%;
   height: 40px;
-  border-radius: 8px;
-  padding: 8px;
-  text-decoration: none;
-  list-style-type: none;
-  float: inline-end;
+  margin-top: 2px;
+  justify-content: flex-start;
+}
+
+#images {
+  justify-content: flex-end;
+  float: right;
+  margin-top: 2px;
+}
+
+.header {
+  margin-bottom: 80px;
 }
 
 #myl-logo {
-  padding: 10px 12px;
-  width: 100px;
-  height: 40px;
-  display: flex;
-  float: inline-start;
-}
-
-.header ul li span {
-  border-radius: 8px;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  float: right;
-
-  /* background-color: #344563; */
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 111%;
+  text-decoration: none;
+  margin-left: auto;
+  color: #6070ff;
+  text-align: start;
+  list-style-type: none;
 }
 
 .main div h1 {
+  background-image: url("images/elipse3.png"), url("images/elipse14.png");
+  background-position: right top, calc(50% + 100px) bottom;
+  background-repeat: no-repeat;
   text-align: center;
   font-family: var(--font-family);
   font-weight: 700;
@@ -50,10 +47,6 @@
   line-height: 130%;
   color: #172b4d;
   padding-right: 0;
-}
-
-.main div h1 svg {
-  float: inline-end;
 }
 
 .main p {
@@ -65,6 +58,7 @@
   text-align: left;
   padding-left: 15%;
   padding-right: 15%;
+  margin-top: 40px;
 }
 
 .let {
@@ -74,6 +68,9 @@
   line-height: 150%;
   color: #7f8cff;
   margin-left: 15%;
+  background-image: url("images/elipse12.png"), url("images/elipse13.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
 
 .social-medias ul {
@@ -81,35 +78,70 @@
   list-style-type: none;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 30%;
   float: left;
   line-break: normal;
 }
 
 .social-medias ul :hover {
-  background-color: #c1cce1;
+  background-color: #87a6de;
   border-radius: 35%;
 }
 
 .social-medias ul li {
   float: left;
   display: flex;
-  padding-right: 10px;
-
-  /* margin-left: 15%;
-  margin-right: 15%;  */
+  padding-right: 30px;
 }
 
-@media only screen and (max-width: 768px) {
+.main {
+  background-image: url("images/image1.png"),
+                     url("images/elipse4.png"),
+                     url("images/rectangle5.png"),
+                     url("images/elipse5.png"),
+                     url("images/rectangle7.png"),
+                     url("images/elipse15.png"),
+                     url("images/rectangle4.png"),
+                     url("images/elipse8.png");
+  background-position: left top,
+                       bottom center,
+                       bottom center, /* Adjust the percentage value as needed */
+                       top center,
+                       top center,
+                       left bottom,
+                       top right,
+                       calc(50% + 140px) top;
+  background-repeat: no-repeat;
+  padding: 10% 10%;
+  width: 80%;
+  height: auto;
+}
+
+/* Styles for mobile screens (375px and above) */
+
+@media screen and (min-width: 375px) {
+
+  .header ul #dropdown {
+    border-radius: 8px;
+    padding: 8px;
+    width: 52px;
+    height: 34px;
+    float: right;
+    margin-top: -45px;
+    /*we will adjust based on the next(project 2,3,4... versions*/
+  }
+
   .navbar ul li a {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 769px) {
+/* Styles for desktop screens(for arge screens) i.e (768px and above) */
+
+@media screen and (min-width: 768px) {
+
   .navbar ul li a {
     width: auto;
-
-    /* display: flex; */
     float: left;
   }
 }
