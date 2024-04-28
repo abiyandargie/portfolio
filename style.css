@@ -1,4 +1,6 @@
-/* Common styles for all screen sizes */
+
+/* common codes for desktop and mobile phone
+  all next common parts will implement here */
 
 .head1 #images img {
   width: 50px;
@@ -17,8 +19,6 @@
   background-image: url("image.jpg");
   height: 160vh;
   align-items: center;
-
-  /* justify-content: center; */
   background-repeat: no-repeat;
   background-size: 95% 100%;
 }
@@ -42,9 +42,6 @@
 }
 
 .main div h1 {
-  /* background-image: url("images/elipse3.png"), url("images/elipse14.png");
-  background-position: right top, calc(50% + 100px) bottom;
-  background-repeat: no-repeat; */
   text-align: center;
   font-family: var(--font-family);
   font-weight: 700;
@@ -77,17 +74,6 @@
   line-height: 150%;
   color: #7f8cff;
   margin-left: 15%;
-
-  /* background-image:
-    url("images/elipse12.png"),
-    url("images/elipse13.png");
-  background-position: right bottom, right bottom;
-  background-size: 24.14px 12.07px, 30.1px 30.1px;
-  background-position-x: 332.18px; */
-
-  /* transform: rotate(176.08deg,-69deg); */
-
-  /* background-repeat: no-repeat; */
 }
 
 .social-medias ul {
@@ -113,34 +99,19 @@
 }
 
 .main {
-  /* background-image:
-    url("images/image1.png"),
-    url("images/elipse4.png"),
-    url("images/rectangle5.png"),
-    url("images/elipse5.png"),
-    url("images/rectangle7.png"),
-    url("images/elipse15.png"),
-    url("images/rectangle4.png"),
-    url("images/elipse8.png");
-  background-position:
-    left top,
-    bottom center,
-    bottom center,
-    top center,
-    top center,
-    bottom left,
-    top right,
-    calc(50% + 140px) top;
-  background-repeat: no-repeat; */
   padding: 10% 10%;
   width: 80%;
   height: auto;
 }
 
-/* Styles for mobile screens (375px and above) */
+/* for small
+     screen like mobile phone tablet screen all feature will implement here that is for 375px and above screen size based on the instruction */
 
 @media screen and (min-width: 375px) {
-  .header ul #dropdown {
+  .dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     display: flex;
     border-radius: 8px;
     padding: 8px;
@@ -148,18 +119,69 @@
     height: 34px;
     float: right;
     margin-top: -45px;
-
-    /* we will adjust based on the next(project 2,3,4... versions */
   }
 
-  .navbar ul li a {
+  .header {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .header .logo {
+    margin-right: auto;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  /* .navbar ul li a {
     width: 100%;
+  } */
+  .dropdown-content a {
+    color: #141313;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: green;
+    border-radius: 12px;
+    padding-right: 5px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
-/* Styles for desktop screens(for arge screens) i.e (768px and above) */
+/* for desktop all feature will implement here */
 
 @media screen and (min-width: 768px) {
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown-content a {
+    color: #141313;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
   .navbar ul li a {
     width: auto;
     float: left;
