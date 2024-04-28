@@ -13,15 +13,16 @@
   justify-content: flex-start;
 }
 
+.background-image-container {
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #images {
   justify-content: flex-end;
   float: right;
   margin-top: 2px;
-}
-
-.header {
-  margin-bottom: 80px;
-   
 }
 
 #myl-logo {
@@ -46,7 +47,11 @@
   font-size: 40px;
   line-height: 130%;
   color: #172b4d;
-  padding-right: 0;
+  padding-right: 60px;
+}
+
+.main div h1 span {
+  color: orangered;
 }
 
 .main p {
@@ -68,11 +73,13 @@
   line-height: 150%;
   color: #7f8cff;
   margin-left: 15%;
-  background-image: url("images/elipse12.png"),
-                    url("images/elipse13.png");
-  background-position: right bottom,right bottom;
-  background-size: 24.14px 12.07px,30.1px 30.1px;
+  background-image:
+    url("images/elipse12.png"),
+    url("images/elipse13.png");
+  background-position: right bottom, right bottom;
+  background-size: 24.14px 12.07px, 30.1px 30.1px;
   background-position-x: 332.18px;
+
   /* transform: rotate(176.08deg,-69deg); */
   background-repeat: no-repeat;
 }
@@ -80,9 +87,7 @@
 .social-medias ul {
   text-decoration: none;
   list-style-type: none;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom: 30%;
+  display: flex;
   float: left;
 }
 
@@ -95,29 +100,31 @@
   float: left;
   display: flex;
   padding-right: 25px;
-  padding-left: 6p;
+  padding-left: 6px;
   background-color: #a4d7b1;
   color: aliceblue;
   border-radius: 10px;
 }
 
 .main {
-  background-image: url("images/image1.png"),
-                    url("images/elipse4.png"),
-                    url("images/rectangle5.png"),
-                    url("images/elipse5.png"),
-                    url("images/rectangle7.png"),
-                    url("images/elipse15.png"),
-                    url("images/rectangle4.png"),
-                    url("images/elipse8.png");
-  background-position: left top,
-                       bottom center,
-                       bottom center, 
-                       top center,
-                       top center,
-                       bottom left,
-                       top right,
-                       calc(50% + 140px) top;
+  background-image:
+    url("images/image1.png"),
+    url("images/elipse4.png"),
+    url("images/rectangle5.png"),
+    url("images/elipse5.png"),
+    url("images/rectangle7.png"),
+    url("images/elipse15.png"),
+    url("images/rectangle4.png"),
+    url("images/elipse8.png");
+  background-position:
+    left top,
+    bottom center,
+    bottom center,
+    top center,
+    top center,
+    bottom left,
+    top right,
+    calc(50% + 140px) top;
   background-repeat: no-repeat;
   padding: 10% 10%;
   width: 80%;
@@ -128,17 +135,17 @@
 
 @media screen and (min-width: 375px) {
   .header ul #dropdown {
+    display: flex;
     border-radius: 8px;
     padding: 8px;
     width: 52px;
     height: 34px;
     float: right;
     margin-top: -45px;
-    
 
     /* we will adjust based on the next(project 2,3,4... versions */
   }
-  
+
   .navbar ul li a {
     width: 100%;
   }
@@ -151,5 +158,4 @@
     width: auto;
     float: left;
   }
-
 }
