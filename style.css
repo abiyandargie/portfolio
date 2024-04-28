@@ -1,5 +1,5 @@
 /* Common styles for all screen sizes */
- 
+
 .head1 #images img {
   width: 50px;
   height: 20px;
@@ -15,14 +15,12 @@
 
 .background-image-container {
   background-image: url("image.jpg");
-  background-size: cover;
-  height: 160vh; 
-   align-items: center;
-  justify-content: center;
+  height: 160vh;
+  align-items: center;
+
+  /* justify-content: center; */
   background-repeat: no-repeat;
   background-size: 95% 100%;
-    
-    
 }
 
 #images {
@@ -79,6 +77,7 @@
   line-height: 150%;
   color: #7f8cff;
   margin-left: 15%;
+
   /* background-image:
     url("images/elipse12.png"),
     url("images/elipse13.png");
@@ -87,6 +86,7 @@
   background-position-x: 332.18px; */
 
   /* transform: rotate(176.08deg,-69deg); */
+
   /* background-repeat: no-repeat; */
 }
 
