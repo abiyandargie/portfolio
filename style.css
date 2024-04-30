@@ -15,8 +15,7 @@
   justify-content: flex-start;
 }
 
- .background-image-container {
-
+.background-image-container {
   background-image: url("images/backgroundm.png");
   height: 160vh;
   align-items: center;
