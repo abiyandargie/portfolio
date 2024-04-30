@@ -16,11 +16,11 @@
 }
 
 .background-image-container {
-  background-image: url("image.jpg");
+  background-image: url("images/backgroundm.png");
   height: 160vh;
   align-items: center;
   background-repeat: no-repeat;
-  background-size: 95% 100%;
+  background-size: 100% 75%;
 }
 
 #images {
@@ -41,6 +41,22 @@
   list-style-type: none;
 }
 
+.let :hover {
+  color: #1bcf48;
+  transition: color 0.4s;
+}
+
+.main div h1 span {
+  color: orangered;
+}
+
+.main div :hover {
+  span {
+    color: #1bcf48;
+    transition: color 0.3s;
+  }
+}
+
 .main div h1 {
   text-align: center;
   font-family: var(--font-family);
@@ -48,11 +64,7 @@
   font-size: 40px;
   line-height: 130%;
   color: #172b4d;
-  padding-right: 60px;
-}
-
-.main div h1 span {
-  color: orangered;
+  padding-right: 50px;
 }
 
 .main p {
@@ -84,8 +96,7 @@
 }
 
 .social-medias ul :hover {
-  background-color: #edf0f4;
-  border-radius: 35%;
+  background-color: #14cf14;
 }
 
 .social-medias ul li {
@@ -99,7 +110,7 @@
 }
 
 .main {
-  padding: 10% 10%;
+  padding: 10% 0;
   width: 80%;
   height: auto;
 }
@@ -184,5 +195,13 @@
   .navbar ul li a {
     width: auto;
     float: left;
+  }
+
+  .background-image-container {
+    background-image: url("images/background.png");
+    height: 160vh;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
   }
 }
