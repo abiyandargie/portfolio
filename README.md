@@ -19,8 +19,7 @@ If you have any inquiries, collaboration opportunities, or simply want to connec
 feel free to reach out to me through any of the following channels:
 ## Live Demo
 
-Check out the live demo of my portfolio at [https://your-portfolio-url.com](https://your-portfolio-url.com).
-
+Check out the live demo of my portfolio at https://abiyandargie.github.io/portfolio/.
 - **Email**:  andargieabiy85@gmail.com
 - **GitHub**: https://github.com/abiyandargie
 - **Twitter**: https://twitter.com/keste_nhb
