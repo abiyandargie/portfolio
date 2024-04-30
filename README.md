@@ -13,12 +13,13 @@ The portfolio section will showcase a selection of my notable projects.
 Each project will be accompanied by a description, key features, technologies.
 This section is currently being developed, and more projects will be added in the near future.
 
-## Contact
-
 ## Contact 
 this section includes
 If you have any inquiries, collaboration opportunities, or simply want to connect, 
 feel free to reach out to me through any of the following channels:
+## Live Demo
+
+Check out the live demo of my portfolio at [https://your-portfolio-url.com](https://your-portfolio-url.com).
 
 - **Email**:  andargieabiy85@gmail.com
 - **GitHub**: https://github.com/abiyandargie
