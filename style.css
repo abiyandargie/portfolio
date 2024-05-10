@@ -155,6 +155,7 @@
   border-radius: 12px;
   background-color: white;
 }
+
 .box1 ul {
   display: flex;
   width: 295px;
@@ -170,6 +171,7 @@
 }
 
 .box11 ul {
+  font-size: 20px;
   width: 214px;
   height: 24px;
 }
