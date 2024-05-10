@@ -1,12 +1,8 @@
-
-/* common codes for desktop and mobile phone
-  all next common parts will implement here */
-
+ 
 .head1 #images img {
   width: 50px;
   height: 20px;
 }
-
 .head1 #time h4 {
   float: left;
   margin-left: 10%;
@@ -14,15 +10,13 @@
   margin-top: 2px;
   justify-content: flex-start;
 }
-
 .background-image-container {
   background-image: url("images/backgroundm.png");
   height: 160vh;
   align-items: center;
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-size: 100% 75%;
 }
-
 #images {
   justify-content: flex-end;
   float: right;
@@ -56,7 +50,6 @@
     transition: color 0.3s;
   }
 }
-
 .main div h1 {
   text-align: center;
   font-family: var(--font-family);
@@ -66,7 +59,6 @@
   color: #172b4d;
   padding-right: 50px;
 }
-
 .main p {
   font-family: var(--font-family);
   font-weight: 400;
@@ -78,27 +70,26 @@
   padding-right: 15%;
   margin-top: 40px;
 }
-
 .let {
+  width: 220px;
+  height: 24px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #7f8cff;
   margin-left: 15%;
+  word-spacing: normal;
 }
-
 .social-medias ul {
   text-decoration: none;
   list-style-type: none;
   display: flex;
   float: left;
 }
-
 .social-medias ul :hover {
-  background-color: #14cf14;
+  background-color: #d8ead8;
 }
-
 .social-medias ul li {
   float: left;
   display: flex;
@@ -108,36 +99,245 @@
   color: aliceblue;
   border-radius: 10px;
 }
-
 .main {
   padding: 10% 0;
-  width: 80%;
+  width: 90%;
   height: auto;
 }
+.works {
+  display: grid;
+  flex-wrap: wrap; 
+  justify-content: center;  
+  align-items: center;  
+  height: 100vh;  
+  border: 1px solid #dfe1e6;
+  justify-content: center; 
+}
+.works img {
+  border-radius: 8px;
+  margin-top: 15%;
+  height: 220px;
+  /* align-self: center;  */
+  border: #ffffffdd solid 2px;
+}
+ .box1 {
+  border: 2px solid #e7e5f3;
+  padding-bottom: 15%;
+  border-radius: 12px;
+  background-color: white;
+ }
+ .box1 :hover {
+   
+ }
+.box1 ul {
+  display: flex;
+  width: 295px;
+  height: 80px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.box11 {
+width: 295px;
+height: 288px;
+margin-bottom: 35px;
+}
+.box11 ul {
+width: 214px;
+height: 24px;
+}
 
-/* for small
-     screen like mobile phone tablet screen all feature will implement here that is for 375px and above screen size based on the instruction */
+.box11 ul li {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 133%;
+letter-spacing: 0.03em;
+color: #6070ff;
+background: #ebebff;
+list-style-type: none;
+border-radius: 8px;
+padding: 5px;
+}
+.box11 .see-project {
+  width: 295px;
+  height: 72px;
+}
+.box1 .see-project button h1 {
+border-radius: 8px;
+width: 126px;
+height: 28px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 17px;
+line-height: 141%;
+letter-spacing: 0.03em;
+text-align: center;
+color: #396df2;
+}
+.box1 p {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+color: #344563;
+margin-left: 40px;
+padding-bottom: 10px;
+width: 78%;
+}
+.box11 h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 137%;
+  color: #172b4d;
+}
+button {
+  border-radius: 20px;
+  padding: 0px;
+  width: 124px;
+  margin: 20px;
+}
+.about-myself {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #e7e5f3;
+  border-radius: 12px;
+ }
+.about-myself .section1 h1 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  color: #172b4d;
+}
+.about-myself .section1 p {
+  display: flex;
+  justify-content: center;
+  margin: 15%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #344563;
+}
 
+.lets-connect h3 {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #7f8cff;
+}
+.my-resume {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  width: 162px;
+  height: 48px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #396df2;
+}
+.contact-me {
+  padding-bottom: 15%;
+  border-radius: 50px 3px 3px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  background-color: #4444df;
+  border: 2px solid #e7e5f3;
+  
+}
+.contact-me h1 {
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 700;
+  margin-top: 2px;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  color: #eee4e4;
+}
+.contact-me p {
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #eeeef3;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form #input {
+  margin:  20px;
+  width: 327px;
+  height: 48px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  background: #fff;
+}
+form textarea {
+  width: 327px;
+  height: 170px;
+  margin:  20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 170px;
+  background: #fff;
+}
+ #submit {
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 142px;
+  height: 48px;
+  background: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #6070ff;
+ }
+  /* small screen minimum of 375 pixel*/
 @media screen and (min-width: 375px) {
   .dropbtn {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    display: flex;
     border-radius: 8px;
     padding: 8px;
     width: 52px;
     height: 34px;
-    float: right;
-    margin-top: -45px;
-  }
-
+    margin-top: -30px; 
+    position: fixed;
+    right: 20px;   
+    }   
   .header {
     background-color: white;
     padding: 10px;
     border-radius: 15px;
   }
-
   .header ul {
     list-style-type: none;
     margin: 0;
@@ -145,58 +345,49 @@
     display: flex;
     align-items: center;
   }
-
   .header .logo {
     margin-right: auto;
+    position: fixed;
   }
-
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 40px;
+    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-
-    /* z-index: 1; */
+    box-shadow: 0 8px 16px 0 #00000033;
   }
-
   .dropdown-content a {
     color: #141313;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-
   .dropdown-content a:hover {
     background-color: green;
     border-radius: 12px;
     padding-right: 5px;
   }
-
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
+  .works {
+    flex-direction: column;
+    border-radius: 16px;
+    align-self: center;
+    border: 2px solid #f6f6f9;
+    height: 600vh; 
+    background-color: #e3d5d533;
+     
+  }
 }
-
-/* for desktop all feature will implement here */
-
+/* for desktop all feature will be implement here */
 @media screen and (min-width: 768px) {
   .dropbtn {
     display: none;
   }
-
-  .dropdown-content a {
-    color: #141313;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .navbar ul li a {
-    width: auto;
-    float: left;
-  }
-
   .background-image-container {
     background-image: url("images/background.png");
     height: 160vh;
@@ -204,4 +395,12 @@
     background-repeat: no-repeat;
     background-size: 100% 75%;
   }
+  .works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: 50px;
+ }
+ 
 }
