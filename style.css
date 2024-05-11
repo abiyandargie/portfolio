@@ -71,6 +71,11 @@
   color: orangered;
 }
 
+.box11 :hover {
+  transform: scale(1.1);
+  transition-duration: 1.1s;
+}
+
 .main div :hover {
   span {
     color: #1bcf48;
@@ -82,6 +87,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 32px;
+
   /* line-height: 137%; */
   color: #172b4d;
 }
@@ -145,28 +151,20 @@
   display: grid;
   flex-wrap: wrap;
   align-items: center;
-  
   border: 1px solid #dfe1e6;
   justify-content: center;
 }
 
 .box1 {
   border: 2px solid #e7e5f3;
- 
   border-radius: 12px;
   background-color: white;
-  
-}
-.box1 :hover, .box11 :hover{
-  transform: scale(1.1);
-   transition-duration: 1.1s;
 }
 
 .box1 ul {
   display: flex;
   justify-content: space-around;
   font-size: 20px;
-  
 }
 
 .box11 ul li {
@@ -180,6 +178,7 @@
   border-radius: 8px;
   padding: 5px;
 }
+
 .about-myself .section1 h1 {
   display: flex;
   justify-content: center;
@@ -250,7 +249,6 @@ button {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-
   color: #7f8cff;
 }
 
@@ -262,7 +260,7 @@ button {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 17px;
-   letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #396df2;
 }
@@ -381,6 +379,7 @@ form textarea {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
+
     /* align-self: center; */
     border: 1px solid #f6f6f9;
     background-color: #e3d5d533;
@@ -404,9 +403,9 @@ form textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-     
   }
-  .box1{
+
+  .box1 {
     display: flex;
   }
 }
