@@ -1,3 +1,6 @@
+.box1 img {
+  border: none;
+}
 
 .languages ul li img {
   padding-right: 8px;
@@ -10,7 +13,6 @@
   background-image: url("images/backgroundm.png");
   background-repeat: no-repeat;
   border: #faf6f6 solid 2px;
-  
 }
 
 .let :hover {
@@ -28,6 +30,7 @@
 .main div h1 span {
   color: orangered;
 }
+
 .main div :hover {
   span {
     color: #1bcf48;
@@ -43,17 +46,16 @@
   font-size: 32px;
   color: #172b4d;
 }
+
 .main {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 70%;
   margin: 5% 15%;
-
 }
 
 .main div h1 {
-   
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 40px;
@@ -86,13 +88,13 @@
   border-radius: 10px;
   text-decoration: none;
   list-style-type: none;
- 
 }
 
 .social-medias ul li :hover {
   background-color: #1fe740;
   border-radius: 5px;
 }
+
 .works {
   flex-wrap: wrap;
   align-items: center;
@@ -105,16 +107,13 @@
   border-radius: 12px;
   background-color: white;
 }
- 
-.box1 img {
-  border: none;
-}
 
 .box1 ul {
   display: flex;
   justify-content: space-evenly;
   font-size: 20px;
 }
+
 .box11 ul li {
   font-family: var(--font-family);
   font-weight: 500;
@@ -157,6 +156,7 @@ button {
   border-radius: 20px;
   margin: 20px;
 }
+
 .languages ul li {
   list-style-type: none;
   background-color: #dee8ec;
@@ -269,11 +269,10 @@ form textarea {
 
   .header ul {
     display: flex;
-    justify-content: sp;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
     align-items: center;
   }
 
@@ -308,13 +307,15 @@ form textarea {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
   .works img {
-   width: 80%;
-   padding: 3%;
-   margin: 6%;
-   border-radius: 8px;
-   border: #f2ededdd solid 1px;
- }
+    width: 80%;
+    padding: 3%;
+    margin: 6%;
+    border-radius: 8px;
+    border: #f2ededdd solid 1px;
+  }
+
   .works {
     display: flex;
     flex-direction: column;
@@ -322,6 +323,7 @@ form textarea {
     border: 1px solid rgb(249, 246, 246);
     background-color: #f3ebeb;
   }
+
   .about-myself {
     display: flex;
     justify-content: center;
@@ -338,6 +340,7 @@ form textarea {
     margin-top: -120px;
     position: fixed;
   }
+
   .dropbtn {
     display: none;
   }
@@ -355,10 +358,10 @@ form textarea {
     width: 90%;
     margin: 5% 5%;
   }
+
   .works img {
     width: 40%;
     padding: 3%;
-    
     border-radius: 8px;
     border: white solid 1px;
   }
@@ -366,39 +369,43 @@ form textarea {
   .box1 {
     display: flex;
     width: 100%;
-    justify-content:  center;
+    justify-content: center;
     border: #d0d4d0 solid 2px;
-    margin: 5px; 
+    margin: 5px;
   }
-   
+
   .dropdown-content {
-    display:  flex;
+    display: flex;
     justify-content: flex-end;
-     background-color: transparent;
-     margin-top: -30px;
-     box-shadow: none;
+    background-color: transparent;
+    margin-top: -30px;
+    box-shadow: none;
   }
+
   .dropdown:hover .dropdown-content {
     display: none;
   }
+
   .dropdown-content a {
     display: flex;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
   }
+
   .about-myself {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
+
   .about-myself .section1 {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
   }
+
   .box2 {
     display: flex;
     flex-direction: row-reverse;
   }
-  
 }
