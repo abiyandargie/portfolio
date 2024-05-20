@@ -6,26 +6,23 @@
     <title>portfolio website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="header" id="start">
-        <ul>
-          <li class="logo">
-            <img src="images/logo.png" alt="logo image" width="50px">
-          </li>
-          <li class="dropdown">
-            <button class="dropbtn" type="button">
-              <img src="images/dropdown.png" alt="dropdown image" id="dropdown">
-            </button>
-            <div class="dropdown-content">
-              <a href="#start">Home</a>
-              <a href="#works">Portfolio</a>
-              <a href="#about-me" rel="noopener">About</a>
-              <a href="#contact-me" rel="noopener">Contact</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+<nav id="start">
+  <div class="logo"><img src="images/logo.png" alt="logo image" width="50px"></div>
+
+  <div class="hamburger"onclick="displayMethod()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+   <div class="close" onclick="closeMethod()"><img src="images/close.jpg" width="40px" alt="close img"></div>
+    <ul class="mainMenu">
+      <li><a href="#start" onclick="calledForList()">Home</a></li>
+      <li><a href="#works" onclick="calledForList()">portfolio</a></li>
+      <li><a href="#about-me" onclick="calledForList()">About</a></li>
+      <li><a href="#contact-me" onclick="calledForList()">Contact</a></li>
+    </ul>
+</nav>
        <section class="background-image-container">
         <main class="main">
           <div>
@@ -71,8 +68,7 @@
         </main>
       </section>
       <div class="works" id="works">
-        <section class="box1">
-          <!-- <h1 style="font-size: 28px; color: #39ec21;">My Recent Works</h1> -->
+        <section class="box1 box">
           <img src="images/box1.png" alt="box 1 image">
           <section class="box11">
             <h1>Tonic</h1>
@@ -94,7 +90,7 @@
           </section>
           </section>
         </section>
-        <section class="box1">
+        <section class="box1 box2">
           <img src="images/box2.png" alt="box 2 image">
           <section class="box11">
             <h1>Multi-post stories</h1>
@@ -113,16 +109,14 @@
               <button><h1>see project</h1></button>
             </section>
           </section>
-
         </section>
-
         <section class="box1">
           <img src="images/box3.png" alt="box 3 image">
           <section class="box11">
             <h1>Tonic</h1>
             <ul id="list1">
               <b>Canopy</b>  
-              <!-- style="font-size: 28px;" -->
+              
                <li>back end dev</li>
                <li>2015</li>
              </ul>
@@ -137,11 +131,11 @@
             </section>
           </section>
         </section>         
-        <section class="box1">
+        <section class="box1 box2">
           <img src="images/box4.png" alt="box 4 image">
           <section class="box11">
             <h1 class="Canopy">Multy post stories</h1>
-            <!-- style="font-size: 28px;" -->
+            
             <ul id="list1">
               <b>Canopy</b>  
                <li>back end dev</li>
@@ -208,15 +202,21 @@
           <h1>Skills  ></h1>
         </section>
           </div>
-      <section class="contact-me" id="contact-me">
-        <h1>Contact Me</h1>
+      <section class="contact-me" id="contact-me" mailto
+  >
+        <h1>Contact Me </h1>
         <p>If you have an application you are interested in developing, a feature that you need built, or a project that needs coding, I'd love to help with it!</p>
-        <form action="anadargieabiy85@gmail.com" method="post">
-         <input type="text" id="input" placeholder="write your user name ">
-         <input type="email" id="input" placeholder="write your email here ">
+        <form action="contactme.php" method="post">
+         <input type="text" id="input" name="name" placeholder="write your user name ">
+         <input type="email" id="input" name="email" placeholder="write your email here">
          <textarea id="message" name="message" rows="4" cols="50" placeholder="write a message here"></textarea>
          <input type="submit" value="get in touch" id="submit">
          </form>        
       </section>
+      <footer>
+      &copy resereved for ab
+
+      </footer>
+      <script src="index.js"></script>
 </body>
 </html>
