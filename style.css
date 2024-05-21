@@ -205,6 +205,7 @@ button {
   padding-bottom: 15%;
   border-radius: 50px 3px 3px 3px;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   background-image: url("images/back.png");
