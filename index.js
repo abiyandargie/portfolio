@@ -1,33 +1,47 @@
-// const hamburger = document.querySelector('.hamburger');
-// const menu = document.querySelector('.menu');
-// const coverBlue = document.querySelector('.coverBlue');
+function displayMethod() {
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.display = 'flex';
+    const close =document.querySelector('.close');
+    close.style.display = 'flex';
+    const humberger =document.querySelector('.hamburger');
+    humberger.style.display ='none';
 
-// hamburger.addEventListener('click', function() {
-//   hamburger.classList.toggle('active');
-//   menu.classList.toggle('active');
-//   coverBlue.classList.toggle('active');
-// });
+  }
 
-// hamburger.addEventListener('transitionend', function() {
-//   if (!hamburger.classList.contains('active')) {
-//     resetHamburger();
-//   }
-// });
-
-// function resetHamburger() {
-//   hamburger.classList.remove('active');
-//   menu.classList.remove('active');
-//   overlay.classList.remove('active');
-// }
-
-const hamburger =document.querySelector('.hamburger');
-let menuOpen = false;
-hamburger.addEventListener('click',()=>{
-    if(menuOpen){
-        hamburger.classList.add('open');
+  function closeMethod() {
+    const option = document.querySelector('.mainMenu');
+    option.style.display = 'none';
+    const close =document.querySelector('.close');
+    close.style.display = 'none';
+    const humberger =document.querySelector('.hamburger');
+    humberger.style.display ='flex';
+  }
+ function closeList() {
+    
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.display = 'none';
+    const close =document.querySelector('.close');
+    close.style.display = 'none';
+    const humberger =document.querySelector('.hamburger');
+    humberger.style.display ='flex';
+}
+ 
+ function calledForList(){
+    if (window.innerWidth <= 767) {
+        closeList();
     }
     else {
-        hamburger.classList.remove('open');
-        menuOpen=false;
+        notCloseList();
     }
-});
+ }
+ function notCloseList() {
+    const humberger =document.querySelector('.hamburger');
+    humberger.style.display ='none';
+    
+    const mainMenu = document.querySelector('.mainMenu');
+    mainMenu.style.display = 'flex';
+  }
+  displayMethod();
+  closeMethod();
+  closeList();
+  notCloseList();

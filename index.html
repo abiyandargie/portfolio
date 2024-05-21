@@ -7,24 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section  class="navbar">
-    <img src="images/logo.png" alt="logo image" width="50px">
-  <div class="hamburger">
+<nav id="start">
+  <div class="logo"><img src="images/logo.png" alt="logo image" width="50px"></div>
+
+  <div class="hamburger"onclick="displayMethod()">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
   </div>
-
-  <nav class="menu">
-    <ul>
-      <li><a href="#start">Home</a></li>
-      <li><a href="#works">portfolio</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#contact-me">Contact</a></li>
+   <div class="close" onclick="closeMethod()"><img src="images/close.jpg" width="40px" alt="close img"></div>
+    <ul class="mainMenu">
+      <li><a href="#start" onclick="calledForList()">Home</a></li>
+      <li><a href="#works" onclick="calledForList()">portfolio</a></li>
+      <li><a href="#about-me" onclick="calledForList()">About</a></li>
+      <li><a href="#contact-me" onclick="calledForList()">Contact</a></li>
     </ul>
-  </nav>
-</section>
-<div class="coverBlue"></div>
+</nav>
        <section class="background-image-container">
         <main class="main">
           <div>
