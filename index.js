@@ -1,9 +1,9 @@
 function displayMethod() {
     const mainMenu = document.querySelector('.mainMenu');
     mainMenu.style.display = 'flex';
-    const close =document.querySelector('.close');
+    const close = document.querySelector('.close');
     close.style.display = 'flex';
-    const humberger =document.querySelector('.hamburger');
+    const humberger = document.querySelector('.hamburger');
     humberger.style.display ='none';
 
   }
@@ -11,16 +11,16 @@ function displayMethod() {
   function closeMethod() {
     const option = document.querySelector('.mainMenu');
     option.style.display = 'none';
-    const close =document.querySelector('.close');
+    const close = document.querySelector('.close');
     close.style.display = 'none';
     const humberger =document.querySelector('.hamburger');
-    humberger.style.display ='flex';
+    humberger.style.display = 'flex';
   }
  function closeList() {
     
     const mainMenu = document.querySelector('.mainMenu');
     mainMenu.style.display = 'none';
-    const close =document.querySelector('.close');
+    const close = document.querySelector('.close');
     close.style.display = 'none';
     const humberger =document.querySelector('.hamburger');
     humberger.style.display ='flex';
@@ -35,8 +35,8 @@ function displayMethod() {
     }
  }
  function notCloseList() {
-    const humberger =document.querySelector('.hamburger');
-    humberger.style.display ='none';
+    const humberger = document.querySelector('.hamburger');
+    humberger.style.display = 'none';
     
     const mainMenu = document.querySelector('.mainMenu');
     mainMenu.style.display = 'flex';
@@ -45,3 +45,4 @@ function displayMethod() {
   closeMethod();
   closeList();
   notCloseList();
+  calledForList();
