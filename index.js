@@ -87,3 +87,26 @@ window.addEventListener('click', (event) => {
       closeList();
       notCloseList();
       calledForList();
+
+      
+      const form = document.getElementById('contactForm');
+      const emailInput = document.getElementById('email');
+      const errorContainer = document.querySelector('.error-container');
+  
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+  
+        const email = emailInput.value.trim();
+  
+        if (email.toLowerCase() === email) {
+           
+          form.submit();
+        } else {
+          
+          errorContainer.textContent = 'email must be lowercase';
+        }
+        emailInput.addEventListener('input', () => {
+           
+          errorContainer.textContent = '';
+        });
+      });

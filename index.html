@@ -136,7 +136,6 @@
           <img src="images/box4.png" alt="box 4 image">
           <section class="box11">
             <h1 class="Canopy">Multy post stories</h1>
-            
             <ul id="list1">
               <b>Canopy</b>  
                <li>back end dev</li>
@@ -206,15 +205,15 @@
       <section class="contact-me" id="contact-me" mailto>
         <h1>Contact Me </h1>
         <p>If you have an application you are interested in developing, a feature that you need built, or a project that needs coding, I'd love to help with it!</p>
-        <form action="contactme.php" method="post">
-         <input type="text" id="input" name="name" placeholder="write your user name ">
-         <input type="email" id="input" name="email" placeholder="write your email here">
-         <textarea id="message" name="message" rows="4" cols="50" placeholder="write a message here"></textarea>
-         <input type="submit" value="get in touch" id="submit">
-         </form>        
+        <!-- contact-me section -->
+        <form action="" method="post" id="contactForm">
+          <input type="text" class="input" name="name" placeholder="write your user name">
+          <input type="email" class="input" id="email" name="email" placeholder="write your email here">
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="write a message here"></textarea>
+          <input type="submit" value="get in touch" id="submit">
+          <div class="error-container"></div>
+        </form>       
       </section>
-      <footer>
-      </footer>
       <script src="index.js">    
       </script>
 </body>
