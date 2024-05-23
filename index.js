@@ -34,77 +34,71 @@ closeButton.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 window.addEventListener('click', (event) => {
-  if (event.target == modal) {
+  if (event.target === modal) {
     modal.style.display = 'none';
   }
 });
-      function displayMethod() {
-        const mainMenu = document.querySelector('.mainMenu');
-        mainMenu.style.display = 'flex';
-        const close = document.querySelector('.close');
-        close.style.display = 'flex';
-        const humberger = document.querySelector('.hamburger');
-        humberger.style.display ='none';
-    
-      }
-    
-      function closeMethod() {
-        const option = document.querySelector('.mainMenu');
-        option.style.display = 'none';
-        const close = document.querySelector('.close');
-        close.style.display = 'none';
-        const humberger =document.querySelector('.hamburger');
-        humberger.style.display = 'flex';
-      }
-     function closeList() {
-        
-        const mainMenu = document.querySelector('.mainMenu');
-        mainMenu.style.display = 'none';
-        const close = document.querySelector('.close');
-        close.style.display = 'none';
-        const humberger =document.querySelector('.hamburger');
-        humberger.style.display ='flex';
-    }
-     
-     function calledForList(){
-        if (window.innerWidth <= 767) {
-            closeList();
-        }
-        else {
-            notCloseList();
-        }
-     }
-     function notCloseList() {
-        const humberger = document.querySelector('.hamburger');
-        humberger.style.display = 'none';
-        
-        const mainMenu = document.querySelector('.mainMenu');
-        mainMenu.style.display = 'flex';
-      }
-      displayMethod();
-      closeMethod();
-      closeList();
-      notCloseList();
-      calledForList();
-      
-      const form = document.getElementById('contactForm');
-      const emailInput = document.getElementById('email');
-      const errorContainer = document.querySelector('.error-container');
-  
-      form.addEventListener('submit', (event) => {
-        event.preventDefault(); 
-  
-        const email = emailInput.value.trim();
-  
-        if (email.toLowerCase() === email) {
-           
-          form.submit();
-        } else {
-          
-          errorContainer.textContent = 'email must be lowercase';
-        }
-        emailInput.addEventListener('input', () => {
-           
-          errorContainer.textContent = '';
-        });
-      });
+function displayMethod() {
+  const mainMenu = document.querySelector('.mainMenu');
+  mainMenu.style.display = 'flex';
+  const close = document.querySelector('.close');
+  close.style.display = 'flex';
+  const humberger = document.querySelector('.hamburger');
+  humberger.style.display = 'none';
+}
+
+function closeMethod() {
+  const option = document.querySelector('.mainMenu');
+  option.style.display = 'none';
+  const close = document.querySelector('.close');
+  close.style.display = 'none';
+  const humberger = document.querySelector('.hamburger');
+  humberger.style.display = 'flex';
+}
+function closeList() {
+  const mainMenu = document.querySelector('.mainMenu');
+  mainMenu.style.display = 'none';
+  const close = document.querySelector('.close');
+  close.style.display = 'none';
+  const humberger = document.querySelector('.hamburger');
+  humberger.style.display = 'flex';
+}
+function notCloseList() {
+  const humberger = document.querySelector('.hamburger');
+  humberger.style.display = 'none';
+
+  const mainMenu = document.querySelector('.mainMenu');
+  mainMenu.style.display = 'flex';
+}
+function calledForList() {
+  if (window.innerWidth <= 767) {
+    closeList();
+  } else {
+    notCloseList();
+  }
+}
+
+displayMethod();
+closeMethod();
+closeList();
+notCloseList();
+calledForList();
+
+const form = document.getElementById('contactForm');
+const emailInput = document.getElementById('email');
+const errorContainer = document.querySelector('.error-container');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = emailInput.value.trim();
+
+  if (email.toLowerCase() === email) {
+    form.submit();
+  } else {
+    errorContainer.textContent = 'email must be lowercase';
+  }
+  emailInput.addEventListener('input', () => {
+    errorContainer.textContent = '';
+  });
+});

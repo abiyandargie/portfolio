@@ -9,7 +9,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #00000066;
+  background-color: #0006;
 }
 
 .modal-content {
@@ -34,6 +34,7 @@
   text-decoration: none;
   cursor: pointer;
 }
+
 .jsLists {
   display: flex;
   justify-content: flex-start;
@@ -69,6 +70,7 @@
   font-size: 40px;
   color: #eee4e4;
 }
+
 .box11 h1 {
   display: flex;
   justify-content: center;
@@ -112,15 +114,18 @@
   font-size: 16px;
   color: #7f8cff;
 }
+
 .social-medias ul {
   display: flex;
   width: 40%;
   border-radius: 10px;
   list-style-type: none;
 }
+
 .social-medias ul li {
   margin-right: 20px;
 }
+
 .social-medias ul li :hover {
   background-color: #1fe740;
   border-radius: 5px;
@@ -141,6 +146,7 @@
   margin: 10px 0;
   width: 100%;
 }
+
 .box1:hover {
   transform: scale(1.2);
   transition-duration: 5s;
@@ -173,6 +179,11 @@
   color: #172b4d;
 }
 
+button {
+  border-radius: 20px;
+  margin: 20px 40px;
+}
+
 .box1 .see-project button {
   border-radius: 8px;
   font-family: var(--font-family);
@@ -189,11 +200,6 @@
   font-size: 15px;
   color: #344563;
   margin: 5%;
-}
-
-button {
-  border-radius: 20px;
-  margin: 20px 40px;
 }
 
 .languages ul li {
@@ -259,6 +265,7 @@ form {
   flex-direction: column;
   justify-content: center;
 }
+
 .error-container {
   color: red;
   font-weight: bold;
@@ -269,7 +276,6 @@ form {
   border-radius: 8px;
 }
 
-
 form .input {
   display: block;
   margin: 6% 20%;
@@ -278,7 +284,6 @@ form .input {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   background: #fff;
-  
 }
 
 form textarea {
@@ -309,12 +314,14 @@ form textarea {
     padding-right: 30px;
     background: #e8e2e4;
   }
+
   .modal-content img {
     display: flex;
     justify-content: center;
     width: 60%;
     margin-left: 95px;
   }
+
   nav {
     color: #fff;
     display: flex;
@@ -324,6 +331,7 @@ form textarea {
     position: sticky;
     z-index: 1; /* to make nav bar over all sections */
   }
+
   nav .mainMenu li a {
     display: flex;
     padding: 15px;
@@ -403,6 +411,7 @@ form textarea {
     border-radius: 16px;
     border: 1px solid #fffefe;
     background: #f4f2f2;
+
     /* background-color: #f3eeee; */
   }
 
@@ -420,7 +429,6 @@ form textarea {
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
-
   }
 
   .background-image-container {
@@ -440,12 +448,12 @@ form textarea {
     width: 40%;
     height: 30px;
   }
+
   .works {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 95%;
-   
   }
 
   .works img {
@@ -454,6 +462,7 @@ form textarea {
     border: white solid 1px;
     z-index: 1;
   }
+
   .box1 {
     display: flex;
     width: 100%;
@@ -479,16 +488,19 @@ form textarea {
     display: flex;
     flex-direction: row-reverse;
   }
+
   .jsLists li {
     padding-right: 30px;
     background: #e8e2e4;
   }
+
   .modal-content img {
     display: flex;
     justify-content: center;
     width: 40%;
     margin-left: 300px;
   }
+
   span {
     display: flex;
     justify-content: center;
