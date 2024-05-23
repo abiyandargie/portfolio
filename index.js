@@ -3,7 +3,6 @@ const modal = document.createElement('div');
 modal.classList.add('modal');
 const modalContent = document.createElement('div');
 modalContent.classList.add('modal-content');
- 
 const projectDetails = document.createElement('div');
 projectDetails.classList.add('project-details');
 projectDetails.innerHTML = `
@@ -87,7 +86,6 @@ window.addEventListener('click', (event) => {
       closeList();
       notCloseList();
       calledForList();
-
       
       const form = document.getElementById('contactForm');
       const emailInput = document.getElementById('email');

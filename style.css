@@ -69,18 +69,6 @@
   font-size: 40px;
   color: #eee4e4;
 }
-
-.main div h1 span {
-  color: orangered;
-}
-
-.main div :hover {
-  span {
-    color: #1bcf48;
-    transition: color 0.3s;
-  }
-}
-
 .box11 h1 {
   display: flex;
   justify-content: center;
@@ -93,6 +81,7 @@
 .main {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 80%;
   margin: 15% 15%;
@@ -123,16 +112,15 @@
   font-size: 16px;
   color: #7f8cff;
 }
-
 .social-medias ul {
   display: flex;
   width: 40%;
-  justify-content: space-between;
   border-radius: 10px;
-  text-decoration: none;
   list-style-type: none;
 }
-
+.social-medias ul li {
+  margin-right: 20px;
+}
 .social-medias ul li :hover {
   background-color: #1fe740;
   border-radius: 5px;
@@ -141,14 +129,21 @@
 .works {
   flex-wrap: wrap;
   align-items: center;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #e9ebf0;
   justify-content: center;
+  width: 100%;
 }
 
 .box1 {
   border: 2px solid #fafafa;
   border-radius: 12px;
-  background-color: white;
+  background: white;
+  margin: 10px 0;
+  width: 100%;
+}
+.box1:hover {
+  transform: scale(1.2);
+  transition-duration: 5s;
 }
 
 .box1 ul {
@@ -320,18 +315,15 @@ form textarea {
     width: 60%;
     margin-left: 95px;
   }
-
-
-
   nav {
-    /* background: #f6f0f0; */
     color: #fff;
     display: flex;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
+    position: sticky;
+    z-index: 1; /* to make nav bar over all sections */
   }
-
   nav .mainMenu li a {
     display: flex;
     padding: 15px;
@@ -350,8 +342,9 @@ form textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    right: 10px;
     align-items: center;
-    position: relative;
     width: 30px;
     height: 55px;
     padding-right: 10px;
@@ -409,7 +402,8 @@ form textarea {
     flex-direction: column;
     border-radius: 16px;
     border: 1px solid #fffefe;
-    background-color: #f3eeee;
+    background: #f4f2f2;
+    /* background-color: #f3eeee; */
   }
 
   .about-myself {
@@ -426,6 +420,7 @@ form textarea {
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
+
   }
 
   .background-image-container {
@@ -435,16 +430,16 @@ form textarea {
   }
 
   nav .mainMenu {
+    margin: 20px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: row;
     background: transparent;
+    list-style-type: none;
+    width: 40%;
+    height: 30px;
   }
-
-  /* .mainMenu li {
-    width: 70%;
-    padding-left: 15%;
-  } */
-
   .works {
     display: flex;
     flex-direction: row;
@@ -457,8 +452,8 @@ form textarea {
     width: 40%;
     border-radius: 8px;
     border: white solid 1px;
+    z-index: 1;
   }
-
   .box1 {
     display: flex;
     width: 100%;
@@ -484,8 +479,6 @@ form textarea {
     display: flex;
     flex-direction: row-reverse;
   }
-
-
   .jsLists li {
     padding-right: 30px;
     background: #e8e2e4;

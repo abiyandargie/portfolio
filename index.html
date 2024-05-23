@@ -28,7 +28,7 @@
         <main class="main" id="home">
           <div>
             <h1>
-              I'M <span>Abiy Andargie</span> Glad to see you!
+              I'M  Abiy Andargie <span>Glad to see you!</span> 
             </h1>
           </div>
           <p>
@@ -206,11 +206,12 @@
         <h1>Contact Me </h1>
         <p>If you have an application you are interested in developing, a feature that you need built, or a project that needs coding, I'd love to help with it!</p>
         <!-- contact-me section -->
-        <form action="" method="post" id="contactForm">
-          <input type="text" class="input" name="name" placeholder="write your user name">
-          <input type="email" class="input" id="email" name="email" placeholder="write your email here">
-          <textarea id="message" name="message" rows="4" cols="50" placeholder="write a message here"></textarea>
-          <input type="submit" value="get in touch" id="submit">
+        <form action="https://api.web3forms.com/submit"  method="post" id="contactForm">
+          <input type="hidden" name="access_key" value="a8d802ae-d225-4fb3-bb7c-b8dd17ad6ef1">
+          <input type="text" class="input" name="name" placeholder="write your user name" required>
+          <input type="email" class="input" id="email" name="email" placeholder="write your email here" required>
+          <textarea id="message" name="message"   rows="4" cols="50" placeholder="write a message here" required></textarea>
+          <button type="submit" value="get in touch" id="submit">get in touch</button>
           <div class="error-container"></div>
         </form>       
       </section>
