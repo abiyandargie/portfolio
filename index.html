@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!--  git push -u origin development-8
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,17 +9,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav id="start">
-  <div class="logo"><img src="images/logo.png" alt="logo image" width="50px"></div>
+<nav>
+  <section  id="home"  class="logo" ><img src="images/logo.png" alt="logo image" width="40x"></section>
 
   <div class="hamburger"onclick="displayMethod()">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
+    <!-- <span class="close-button">&times;</span> -->
   </div>
    <div class="close" onclick="closeMethod()"><img src="images/close.jpg" width="40px" alt="close img"></div>
     <ul class="mainMenu">
-      <li><a href="#start" onclick="calledForList()">Home</a></li>
+      <li><a href="#home" onclick="calledForList()">Home</a></li>
       <li><a href="#works" onclick="calledForList()">portfolio</a></li>
       <li><a href="#about-me" onclick="calledForList()">About</a></li>
       <li><a href="#contact-me" onclick="calledForList()">Contact</a></li>
@@ -25,10 +28,8 @@
 </nav>
        <section class="background-image-container">
         <main class="main">
-          <div>
-            <h1>
-              I'M <span>Abiy Andargie</span> Glad to see you!
-            </h1>
+          <div class="head1">           
+              I'M  Abiy Andargie Glad to see you!          
           </div>
           <p>
             I'm a software developer! I can help you build a product, feature, or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.
@@ -36,16 +37,16 @@
           <div class="let">
             <h3>LET'S CONNECT</h3>
           </div>
-          <div class="social-medias">
+          <section class="social-medias">             
             <ul>
               <li>
                 <a href="https://twitter.com/keste_nhb" target="_blank" rel="noopener">
-                  <img src="images/twiter.png" alt="twitter logo">
+                  <img src="images/twiter.png" alt="Twitter logo">
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/abiy-andargie-037560300/" target="_blank" rel="noopener">
-                  <img src="images/linkedin.png" alt="linkedin logo">
+                  <img src="images/linkedin.png" alt="LinkedIn logo">
                 </a>
               </li>
               <li>
@@ -55,16 +56,16 @@
               </li>
               <li>
                 <a href="https://github.com/abiyandargie" target="_blank" rel="noopener">
-                  <img src="images/github.png" alt="github logo">
+                  <img src="images/github.png" alt="GitHub logo">
                 </a>
               </li>
               <li>
                 <a href="https://example.com" target="_blank" rel="noopener">
-                  <img src="images/v.png" alt="v logo">
+                  <img src="images/v.png" alt="V logo">
                 </a>
               </li>
-            </ul>
-          </div>
+            </ul>          
+          </section>     
         </main>
       </section>
       <div class="works" id="works">
@@ -86,7 +87,7 @@
             <li>javascript</li>works
           </ul>
           <section class="see-project">
-            <button><h1>see project</h1></button>
+            <button type="submit" onclick="details()"> see project </button>
           </section>
           </section>
         </section>
@@ -106,7 +107,7 @@
               <li>javascript</li>
              </ul>
              <section class="see-project">
-              <button><h1>see project</h1></button>
+              <button type="submit" onclick="details()"> see project </button>
             </section>
           </section>
         </section>
@@ -127,7 +128,7 @@
               <li>javascript</li>
              </ul>
              <section class="see-project">
-              <button><h1>see project</h1></button>
+              <button type="submit" onclick="details()"> see project </button>
             </section>
           </section>
         </section>         
@@ -135,24 +136,24 @@
           <img src="images/box4.png" alt="box 4 image">
           <section class="box11">
             <h1 class="Canopy">Multy post stories</h1>
-            
             <ul id="list1">
               <b>Canopy</b>  
                <li>back end dev</li>
                <li>2015</li>
              </ul>
           <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <ul id="list2">
+          <ul>
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
            </ul>
            <section class="see-project">
-            <button><h1>see project</h1></button>
+            <button type="submit" onclick = "details()"> see project</button>
           </section>
           </section>
           </section>
       </div>
+      
       <div class="about-myself" id="about-me">
         <section class="section1">
           <h1>About Myself</h1>
@@ -188,7 +189,7 @@
                 </a>
               </li>
             </ul>          
-          </section>     
+          </section>      
           <button class="my-resume">Get My Resume</button>
         </section>
         <section class="languages">
@@ -202,21 +203,20 @@
           <h1>Skills  ></h1>
         </section>
           </div>
-      <section class="contact-me" id="contact-me" mailto
-  >
+          
+      <section class="contact-me" id="contact-me" mailto>
         <h1>Contact Me </h1>
         <p>If you have an application you are interested in developing, a feature that you need built, or a project that needs coding, I'd love to help with it!</p>
-        <form action="contactme.php" method="post">
-         <input type="text" id="input" name="name" placeholder="write your user name ">
-         <input type="email" id="input" name="email" placeholder="write your email here">
-         <textarea id="message" name="message" rows="4" cols="50" placeholder="write a message here"></textarea>
-         <input type="submit" value="get in touch" id="submit">
-         </form>        
+        <!-- contact-me section -->
+        <form action="https://api.web3forms.com/submit"  method="post" id="contactForm">
+          <input type="hidden" name="access_key" value="a8d802ae-d225-4fb3-bb7c-b8dd17ad6ef1">
+          <input type="text" class="input" name="name" placeholder="write your user name" required>
+          <input type="email" class="input" id="email" name="email" placeholder="write your email here" required>
+          <textarea id="message" name="message"   rows="4" cols="50" placeholder="write a message here" required></textarea>
+          <button type="submit" value="get in touch" id="submit">get in touch</button>
+          <div class="error-container"></div>
+        </form>       
       </section>
-      <footer>
-      &copy resereved for ab
-
-      </footer>
       <script src="index.js"></script>
 </body>
 </html>

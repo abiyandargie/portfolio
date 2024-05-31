@@ -1,10 +1,49 @@
-
-.box1 img {
-  border: none;
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #0006;
 }
 
+.modal-content {
+  background-color: #5ce360;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90vw;
+  height: 100vh;
+  margin: 13%;
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  color: #bdb5b5;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.jsLists {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+/* sffdddddddddddddddddddddddddddddddfosjhhhhhh;j */
+ 
 .languages ul li img {
-  padding-right: 8px;
   width: 20px;
   margin-left: 5%;
   border-radius: 50%;
@@ -15,34 +54,21 @@
   background-repeat: no-repeat;
   border: #faf6f6 solid 2px;
 }
-
-.let :hover {
-  color: #1bcf48;
-  transition: color 0.4s;
-}
-
 .contact-me h1 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 40px;
   color: #eee4e4;
 }
-
-.main div h1 span {
-  color: orangered;
-}
-
-.main div :hover {
-  span {
-    color: #1bcf48;
-    transition: color 0.3s;
-  }
-}
-
-.box11 h1 {
+.box11 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-family: var(--font-family);
+  width: 100%;
+}
+.box11 h1 {  /* tonic */
+  font-family: var(--font-family);  /*try it*/
   font-weight: 700;
   font-size: 32px;
   color: #172b4d;
@@ -50,19 +76,19 @@
 
 .main {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 70%;
-  margin: 5% 15%;
+  align-items: center;
+  justify-content: center;
+  margin: 10vw 10vw;
 }
 
-.main div h1 {
+.main .head1 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   color: #172b4d;
-  padding-right: 50px;
+  
 }
 
 .main p {
@@ -72,11 +98,10 @@
   line-height: 150%;
   color: #344563;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .let {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
@@ -84,65 +109,72 @@
 
 .social-medias ul {
   display: flex;
-  width: 40%;
-  justify-content: space-between;
-  border-radius: 10px;
-  text-decoration: none;
   list-style-type: none;
+ }
+.social-medias ul li {
+   margin-right: 30px;
 }
-
-.social-medias ul li :hover {
-  background-color: #1fe740;
-  border-radius: 5px;
-}
-
 .works {
-  flex-wrap: wrap;
-  align-items: center;
-  border: 1px solid #dfe1e6;
-  justify-content: center;
+  display: flex;
+  width: 100%;
 }
 
 .box1 {
-  border: 2px solid #fafafa;
+  display: flex;
+  border: 2px solid #1ee135;
   border-radius: 12px;
-  background-color: white;
+  background: white;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.box1:hover {
+  /* transform: scale(1.2);
+  transition-duration: 5s; */
 }
 
 .box1 ul {
   display: flex;
-  justify-content: space-evenly;
   font-size: 20px;
 }
 
 .box11 ul li {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.063em;
   color: #6070ff;
-  background: #ebebff;
+  background: #f6f6f8;
   list-style-type: none;
-  border-radius: 8px;
+  margin: 0 10px;
+  border-radius: 5px;
   padding: 5px;
 }
 
-.about-myself .section1 h1 {
+.about-myself .section1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 3px solid #15d45b; */
+}
+.about-myself .section1 h1 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
 }
 
-.box1 .see-project button h1 {
+.box1 .see-project button {
   border-radius: 8px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 17px;
+  font-size: 28px;
+   padding: 10px;
   letter-spacing: 0.03em;
   color: #396df2;
+  border-radius: 20px;
+  margin: 20px;
+  
 }
 
 .box1 p {
@@ -150,19 +182,17 @@
   font-weight: 400;
   font-size: 15px;
   color: #344563;
-  margin: 5%;
+  margin: 15px;
 }
-
-button {
-  border-radius: 20px;
-  margin: 20px;
+.languages {
+  display: flex;
+  flex-direction: column;
 }
-
-.languages ul li {
+.languages ul li  {
   list-style-type: none;
-  background-color: #dee8ec;
-  margin-bottom: 30%;
+  background-color: #f7f8f8;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .contact-me p {
@@ -174,7 +204,7 @@ button {
 }
 
 .about-myself .section1 p {
-  margin: 15%;
+  margin: 5% 15%;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -182,7 +212,7 @@ button {
 }
 
 .lets-connect h3 {
-  font-family: var(--font-family);
+  margin: 30px;
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
@@ -192,21 +222,20 @@ button {
   border: 1px solid #6070ff;
   border-radius: 8px;
   padding: 12px;
-  width: 162px;
-  font-family: var(--font-family);
   font-weight: 500;
+  margin-top: 30px;
   font-size: 17px;
   letter-spacing: 0.03em;
-  text-align: center;
   color: #396df2;
 }
 
 .contact-me {
-  padding-bottom: 15%;
-  border-radius: 50px 3px 3px 3px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 8%;
+  border-radius: 100px 3px 3px 3px;
+  margin-top: 100px;
   background-image: url("images/back.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,9 +250,19 @@ form {
   justify-content: center;
 }
 
-form #input {
-  margin: 20px;
-  width: 327px;
+.error-container {
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 40px;
+  background-color: lightgrey;
+  width: 40%;
+  border-radius: 8px;
+}
+
+form .input {
+  margin: 6% 10%;
+  width: 70%;
   height: 48px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -231,9 +270,9 @@ form #input {
 }
 
 form textarea {
-  width: 327px;
+  margin: 6% 10%;
+  width: 70%;
   height: 170px;
-  margin: 20px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   background: #f6f1f1;
@@ -248,96 +287,103 @@ form textarea {
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.03em;
-  text-align: center;
   color: #6070ff;
 }
 
 /* small screen minimum of 375 pixel */
 @media screen and (min-width: 375px) {
+  .jsLists li {
+    padding-right: 30px;
+    background: #e8e2e4;
+  }
+
+  .modal-content img {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: 95px;
+  }
+
   nav {
-    /* background: #f6f0f0; */
     color: #fff;
     display: flex;
-    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
+    /* position: fixed; */
+    height: 50px;
+    width: 100%;
+    z-index: 1; /* to make nav bar over all sections */
   }
 
   nav .mainMenu li a {
     display: flex;
     padding: 15px;
+    font-weight: 700;
     justify-content: center;
     text-decoration: none;
-    text-transform: uppercase;
-    color: black;
+    color: white;
     font-size: 1.5rem;
   }
-
-  nav .mainMenu li a :hover {
-    background: #bc5e3c;
-  }
-
   .hamburger {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    position: fixed;
+    right: 10px;
     width: 30px;
-    height: 55px;
-    padding-right: 10px;
+    height: 25px;
+    border: solid 2px red;
+    padding: 10px;
     cursor: pointer;
   }
 
   .close {
     display: none;
-    position: relative;
-    height: 100%;
+    position: fixed;
+    right: 15px;
+    height: 25px;
   }
 
   .line {
-    width: 100%;
     height: 3px;
-    background: black;
+    background: #000000;
     margin-bottom: 5px;
   }
 
   nav .logo {
     margin: 6px;
-    font-size: 25px;
     cursor: pointer;
-    padding-right: 75vw;
   }
 
   nav .mainMenu {
+    display: none;
+    list-style-type: none;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 10;
     margin-top: 35px;
     flex-direction: column;
     justify-content: center;
     background: #1919c5;
-    transition: top 1s ease;
-    width: 100vw;
-    display: none;
+    opacity: 0.8;
+    width: 90vw;
+   
   }
 
   .works img {
+    margin: 40px ;
     width: 80%;
-    padding: 3%;
-    margin: 6%;
     border-radius: 8px;
-    border: #f2ededdd solid 1px;
+    /* border: #20b509dd solid 3px; */
   }
 
   .works {
-    display: flex;
     flex-direction: column;
     border-radius: 16px;
-    border: 1px solid #fffefe;
-    background-color: #f3eeee;
+    /* border: 3px solid #b32e0d; */
+    background: #f4f2f2;
+  }
+  .box1 {
+    flex-direction: column;
   }
 
   .about-myself {
@@ -345,7 +391,7 @@ form textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #e7e5f3;
+    border: 3px solid #c10d8b;
     border-radius: 12px;
   }
 }
@@ -363,36 +409,34 @@ form textarea {
   }
 
   nav .mainMenu {
+    margin: 20px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: row;
     background: transparent;
-  }
-
-  .mainMenu li {
-    width: 70%;
-    padding-left: 15%;
+    list-style-type: none;
+    width: 40%;
+    height: 30px;
   }
 
   .works {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin: 5% 5%;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .works img {
     width: 40%;
-    padding: 3%;
     border-radius: 8px;
-    border: white solid 1px;
+    
   }
 
   .box1 {
     display: flex;
-    width: 100%;
+    flex-direction: row;
     justify-content: center;
-    border: #fdfefd solid 2px;
+    border: #fdfefd solid 1px;
     margin: 5px;
   }
 
@@ -400,17 +444,36 @@ form textarea {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-bottom: 40px;
   }
-
   .about-myself .section1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
+    flex: 2;
+    /* border: 2px solid orangered; */
+  }
+  .about-myself .languages {
+    flex: 1;
   }
 
   .box2 {
-    display: flex;
+    /* display: flex; */
     flex-direction: row-reverse;
+  }
+
+  .jsLists li {
+    padding-right: 30px;
+    background: #e8e2e4;
+  }
+
+  .modal-content img {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 300px;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
